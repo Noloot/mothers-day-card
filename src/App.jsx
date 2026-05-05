@@ -12,10 +12,6 @@ function App() {
             <h1>Happy Mother&apos;s Day</h1>
             <p>With love, always</p>
           </div>
-
-          <button onClick={() => setIsOpen(!isOpen)}>
-            {isOpen ? "CLOSE" : "OPEN"}
-          </button>
         </div>
 
         <div className="card-inside">
@@ -26,6 +22,11 @@ function App() {
           </p>
         </div>
       </section>
+
+      {/* Button to flip the card */}
+      <button className="toggle-btn" onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? "CLOSE" : "OPEN"}
+      </button>
     </main>
   )
 }

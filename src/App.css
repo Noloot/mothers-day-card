@@ -39,6 +39,15 @@
   transform: rotateY(-155deg);
 }
 
+.card.open .front-content {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.front-content {
+  transition: opactiy 0.3s ease;
+}
+
 .card-front h1 {
   font-size: 3rem;
   margin-bottom: 8px;
@@ -49,15 +58,18 @@
   margin-bottom: 32px;
 }
 
-.card-front button {
+.toggle-btn {
+  position: absolute;
+  bottom: 40px;
   border: none;
-  border-radius: 999px;
-  padding: 14px, 36px;
+  border-radius: 999;
+  padding: 14px 36px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   background: white;
   color: #d63384;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
 }
 
 .card-inside {
