@@ -8,7 +8,7 @@ function App() {
     <main className="page">
       <section className={`card ${isOpen ? "open" : ""}`}>
         <div className="card-front">
-          <h1>Happ Mothers&apos;s Day</h1>
+          <h1>Happy Mothers&apos;s Day</h1>
           <p>With love, always</p>
 
           <button onClick={() => setIsOpen(true)}>
