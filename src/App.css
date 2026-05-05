@@ -4,7 +4,21 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #ffd6e8, #fff4f8);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 20px;
+  position: relative;
+  overflow: hidden;
+  transition: background-image 1s ease-in-out;
+}
+
+.overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(225, 214, 232, 0.45);
+  backdrop-filter: blur(3px);
+  z-index: 0;
 }
 
 .card {
@@ -70,6 +84,28 @@
   background: white;
   color: #d63384;
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card,
+.toggle-btn {
+  z-index: 1;
+}
+
+.upload-btn {
+  display: inline-block;
+  margin-top: 24px;
+  border: none;
+  border-radius: 999;
+  padding: 12px 28px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  background: #d63384;
+  color: white;
+}
+
+.upload-btn input {
+  display: none;
 }
 
 .card-inside {
