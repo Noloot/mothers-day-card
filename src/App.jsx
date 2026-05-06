@@ -48,21 +48,30 @@ function App() {
         </div>
 
         <div className="card-inside">
-          <h2>Happy Mothers&apos;s Day</h2>
-          <p>
-            Thank you for your love, patiece, strength, and everything you do.
-            You are appreciated more than words can say
-          </p>
+          <div className="photo-side">
+            {currentBackground ? (
+              <img src={currentBackground} alt="Uploaded memory" />
+            ) : (
+              <p className="photo-placeholder">Upload photos to start the slideshow</p>
+            )}
+          </div>
 
-          <label className="upload-btn">
-            Upload Photos
-            <input
-              type="file"
-              accept="image/*"
-              multiple
-              onChange={handleImageUpload}
-            />
-          </label>
+          <div className="message-side">
+            <h2>Happy Mother&apos;s Day</h2>
+            <p>
+              Thank you for your love, patience, strength, and everything you do. You are appreciated more than words can say.
+            </p>
+
+            <label className="upload-btn">
+              Upload Photos
+              <input
+                type="file"
+                accept="image/*"
+                multiple
+                onChange={handleImageUpload}
+              />
+            </label>
+          </div>
         </div>
       </section>
 
