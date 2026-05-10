@@ -168,17 +168,17 @@
   }
 
   .card{
-    width: 58vw;
-    height: 430px;
+    width: 28vw;
+    height: 230px;
     transform: translateX(22vw);
   }
 
   .card.open {
-    transform: translatex(30vw);
+    transform: translatex(12vw);
   }
 
   .card.open .card-front {
-    transform: rotateY(-155deg);
+    transform: rotateY(-125deg);
   }
 
   .card-front h1 {
@@ -190,16 +190,16 @@
   }
 
   .card-inside {
-    padding: 22px;
+    padding: 14px;
   }
 
   .card-inside h2 {
-    font-size: 1.45rem;
+    font-size: 0.95rem;
   }
 
   .card-inside p {
     font-size: 0.85rem;
-    line-height: 1.45;
+    line-height: 0.95;
   }
 
   .cover-back img {
