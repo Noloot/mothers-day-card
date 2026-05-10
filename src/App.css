@@ -168,17 +168,17 @@
   }
 
   .card{
-    width: 28vw;
-    height: 230px;
+    width: 35vw;
+    height: 330px;
     transform: translateX(22vw);
   }
 
   .card.open {
-    transform: translatex(12vw);
+    transform: translatex(22vw);
   }
 
   .card.open .card-front {
-    transform: rotateY(-125deg);
+    transform: rotateY(-135deg);
   }
 
   .card-front h1 {
