@@ -160,3 +160,42 @@
   font-size: 1.15rem;
   line-height: 1.7;
 }
+
+@media (max-width: 600px) {
+  .page {
+    padding: 12px;
+    align-items: center;
+  }
+
+  .card{
+    width: 70vw;
+    height: 460px;
+    transform: translate(18vw);
+  }
+
+  .card.open {
+    transform: translatex(28vw);
+  }
+
+  .card.open .card-front {
+    transform: rotateY(-145deg);
+  }
+
+  .card-front h1 {
+    font-size: 2.2rem;
+  }
+
+  .card-inside h2 {
+    font-size: 1.5rem;
+  }
+
+  .card-inside p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .toggle-btn {
+    bottom: 18px;
+    padding: 12px 30px;
+  }
+}
